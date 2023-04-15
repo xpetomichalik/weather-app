@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1920x1080/?nature");
+  font-size: 20px;
+}
+
+.box {
+  background: #503c14;
+  color: white;
+  padding: 2em;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 420px;
+
+  opacity: 90%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #0000002b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 25px;
+  background: #0000002b;
+  color: white;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 18px;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #000000;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Insert a city";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
